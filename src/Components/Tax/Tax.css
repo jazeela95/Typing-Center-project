@@ -1,0 +1,23 @@
+.taxfrstcol
+{
+    height: 500px;
+    flex: 0.33;
+    margin-top: 7.5rem;
+}
+.tax-main
+{
+    margin-top:-3.5rem;
+    padding-left:3px;
+    text-align:justify;
+}
+.taxspan
+{
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width:480px) {
+
+  
+}

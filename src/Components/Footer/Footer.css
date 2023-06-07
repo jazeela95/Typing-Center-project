@@ -1,0 +1,50 @@
+.footer-main
+{
+    background-color:rgb(177, 250, 177) ;
+    color:rgb(9, 140, 9) !important;
+    font-weight: bold;
+
+}
+.divfooterlast
+{
+    margin-left: 30rem;
+}
+p:hover{
+    background-color: white;
+    cursor: pointer;
+    
+}
+.text-reset
+{
+    text-decoration: solid;
+}
+@media screen and (max-width:480px)
+{
+    .footer1
+    {
+        position: relative;
+    }
+    .footer-main
+    {
+        /* margin-top: 67rem; */
+    }
+    .footer-below
+    {
+        display: none !important;
+    }
+}
+@media screen and (max-width:1026px)
+{
+
+    .footer-below
+    {
+        display: none !important ;
+        flex-direction: row;
+        overflow: hidden; 
+    }
+    .divfooterlast
+    {
+        margin-left:2px;
+      
+    }
+}

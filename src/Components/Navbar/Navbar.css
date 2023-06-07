@@ -1,0 +1,87 @@
+.css-m5x0z-MuiTypography-root{
+    
+    margin-right: 700px !important;
+}
+.css-hip9hq-MuiPaper-root-MuiAppBar-root
+{
+    background-color: rgb(177, 250, 177) !important;
+}
+.css-1q39md6-MuiButtonBase-root-MuiButton-root
+{
+    font-weight: bold !important;
+   color:rgb(9, 140, 9) !important;
+   font-size: 15px !important;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 
+{
+    font-weight: bold !important;
+   color:rgb(9, 140, 9) !important;
+   font-size: 19px !important;
+}
+.navmobileview
+{
+    display: flex !important;
+    gap: 2rem !important;
+    list-style-type: none;
+    flex-direction: column !important;
+    padding-left: 1px !important;
+    color:rgb(9, 140, 9) !important;
+    text-decoration: none !important;
+   
+}
+.webviewnav
+{
+    display: flex !important;
+    flex-direction: row !important;
+    color:rgb(9, 140, 9) !important;
+    gap: 2rem;
+    margin-left: 450px;
+}
+a{
+    color:rgb(9, 140, 9) !important;
+    text-decoration: none !important;
+}
+li:hover,
+li.active {
+  background-color: rgb(184, 245, 146)!important; /* Background color for the active/hovered dropdown item */
+}
+.dropdown-item:hover,
+.dropdown-item.active {
+  background-color: rgb(150, 249, 150)!important; /* Background color for the active/hovered dropdown item */
+}
+@media screen and (max-width:1026px) 
+{
+.webviewnav
+{
+    margin-left: 10px !important;
+}
+.imgheader
+{
+    margin-left: -100px;
+}
+
+
+}
+@media (min-width: 600px)
+{
+    .css-r6ewbb-MuiToolbar-root {
+        min-height: 64px;
+        margin-left: -164px;
+    }
+    .webviewnav
+{
+   padding-left: 390px;
+}
+}
+@media screen and (min-width:700px) 
+{
+
+    .css-r6ewbb-MuiToolbar-root {
+        min-height: 64px;
+        margin-left: -800px;
+    }
+    .webviewnav
+    {
+       padding-left: -390px !important;
+    }
+}

@@ -1,0 +1,102 @@
+.nav-main
+
+{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+    border-radius: 10px;
+    
+    
+    height: 80px;
+    background-color: rgb(177, 250, 177);
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.25);
+}   
+.navfrstdiv
+{
+    margin-left: 800px;
+}
+.logoimage
+{
+    /* transform: scale(0.4); */
+    width:50px;
+    height:50px;
+    cursor: pointer;
+}
+.navbar
+{
+  
+    font-weight: bold;
+   color:red;
+    border-color: none;
+    gap:3rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-weight: bold;
+   color:rgb(9, 140, 9);
+    border-color: none;
+    
+}
+.navbar-expand-lg .navbar-nav {
+    gap:2rem !important;
+}
+/* .navdropdown
+{
+background-color: rgb(73, 249, 73);
+}
+.dropdown-menu {
+    background-color: #9c1515; /* Background color for the dropdown list */
+/* } */
+  
+  .dropdown-item:hover
+  .dropdown-item.active {
+    background-color: rgb(150, 249, 150)!important; /* Background color for the active/hovered dropdown item */
+  }
+  @media screen and (max-width:480px) {
+    .navbarrrr{
+        margin-top: 502px;
+        z-index: 400000;
+    }
+    .navbar-collapse
+    {
+        z-index: 500;
+        margin-top: 250px;
+        
+    }
+    .navbar-expand-lg .navbar-nav .nav-link
+    {
+        background-color: rgb(239, 226, 217);
+    }
+    .nav-main
+    {
+        /* height: auto !important; */
+        border-radius: 1px;
+    }
+    .navfrstdiv
+    {
+        margin-left: 200px !important;
+    }
+  }
+  @media screen and (max-width:1026px)
+  {
+
+   .navfrstdiv
+   {
+    margin-left: 380px;
+    
+   }
+   .navbar-collapse
+   {
+    margin-top: -30px;
+    margin-left: -40px;
+   }
+   .nav-main
+   {
+    /* height: 100px !important; */
+   }
+
+  }
+
+  

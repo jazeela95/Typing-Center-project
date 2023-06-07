@@ -1,0 +1,25 @@
+.icondiv
+{
+    position: fixed;
+    cursor: pointer;
+    top:80%;
+    right: 50px;
+}
+@media screen and (max-width:480px) 
+{
+
+.icondiv{
+    top: 70%;
+    right: 50px !important;
+}
+
+}
+@media screen and (max-width:430px) 
+{
+
+.icondiv{
+    top: 80%;
+    right: 30px;
+}
+
+}

@@ -1,0 +1,124 @@
+ .detai-button
+  {
+    background-color:rgb(177, 250, 177);
+    /* width:150px; */
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    color:black;
+    border: none;
+    
+    font-weight: bold;
+  }
+  .para
+  {
+    text-align: center;
+  }
+  .detail-main
+  {
+    margin-bottom: 30px;
+  }
+  .imagedetail 
+{
+  object-fit:cover;
+  height:200px;
+  width:300px;
+  border-radius:2px;
+}
+  @media screen and (max-width:480px) {
+    
+    .col
+    {
+      margin-bottom: 25px;
+      width: 100%;
+    
+    }
+   .imagedetail
+   {
+    height: 200px;
+    width: 280px;
+   }
+   .detail-main
+   {
+    width :100%;
+   }
+   .para 
+    {
+      font-size:15px;
+      text-align: justify;
+      width: 270px;
+
+    }
+    .lastpara
+    {
+      
+      margin-left: 1px !important;
+      margin-right: 4px;
+      width: 390px !important;
+    }
+    
+
+   
+    
+  }
+  @media screen and (max-width:1026px)
+  {
+
+    .detaillastcol
+    {
+      margin-top: 5rem;
+    }
+    .lastpara
+    {
+      width: 400px;
+      margin-left: 270px;
+    }
+  }
+  @media screen and (max-width:480px)
+  {
+    
+      .lastpara
+      {
+      width: 270px !important;
+      margin-left:5PX !important;
+      
+     
+    }
+  }
+  @media screen and (max-width:480px){
+  .para
+{
+    width: 350px;
+}
+.lastpara
+{
+    width: 350px !important;
+}
+.imagedetail
+{
+  margin-top: 1px;
+}
+.imglast
+{
+  margin-top:-3rem !important;
+}
+  }
+  @media screen and (max-width:330px){
+    .para
+  {
+      width: 290px;
+  }
+  .lastpara
+  {
+      width: 290px !important;
+  }
+}
+
+@media screen and (max-width:770px) 
+{
+  .lastpara
+  {
+      margin-left: 150px;
+  }
+
+}

@@ -1,0 +1,127 @@
+.cardimageoflegal-1
+{
+    height: 210px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 2%;
+    /* margin-top: 60px;     */
+    margin-left: 40px;
+    
+    /* box-shadow: 12px 12px 29px -12px rgba(0,0,0,0.75); */
+   
+}
+.abouttextmain
+{
+    text-align: justify;
+    padding-left: 11px;
+    padding-top: -30px;
+}
+.mainall
+{
+    margin-top: 6rem;   
+    margin-bottom: 0rem;
+
+}
+.aboutmainback span
+{
+    margin-left: -160px;
+}
+.servicebutton
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(234, 224, 224)
+}
+.legalfrstcol
+{
+    height: 500px;
+    flex: 0.33;
+    margin-top: 7.5rem;
+}
+.abouttextmain>:nth-child(2)
+{
+    flex: 2;
+    font-size: 1rem;
+    text-align:justify;
+}
+.imagecolmlegal
+{
+    justify-content: center;
+    margin-top: -15px;
+    border-radius: 0;
+}
+.abouttextmain>:nth-child(1)
+{
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+}
+.legalspan2
+{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:480px) {
+
+.abouttextmain>:nth-child(2) {
+width: 100%;
+font-size: 15px;
+margin: 0px;
+padding: 0px;
+
+}
+.abouttextmain>:nth-child(1)
+{
+    margin-top: -11rem;
+}
+.abouttextmain
+{
+    /* margin-top: -11rem; */
+}
+.cardimageoflegal-1
+{
+    margin-left: 3rem;
+    width: 330px;
+}
+.legalfrstcol
+{
+   margin-top: 2rem !important;
+   margin-left: 5rem !important;
+   margin-bottom: -3rem;
+}
+.aboutmainback span
+{
+top:50%;
+left: 50%;
+transform: translate(15%, -40%);
+text-decoration: underline;
+}
+.legalspan2
+{
+    top:50% !important;
+    left: 50% !important;
+    transform: translate(0%, -50%) !important; 
+}
+
+}
+@media screen and (max-width:1026px)
+{
+    .abouttextmain
+    {
+        margin-bottom: 2rem;
+    }
+    
+}
+@media screen and (max-width:1026px)
+{
+    .legalfrstcol
+    {
+       margin-top: 2rem !important;
+       margin-left: -1rem !important;
+       margin-bottom: -3rem;
+    }
+    .cardimageoflegal-1
+    {
+        width: 280px !important;
+    }
+
+}

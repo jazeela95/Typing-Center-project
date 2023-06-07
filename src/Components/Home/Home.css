@@ -1,0 +1,260 @@
+  .home-main
+  {
+    /* background-image: url("../images/backgroundimage1.jpeg"); */
+    object-fit: cover;
+    height:100px;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .imageclass-home
+  {
+    /* height: 100%; */
+    /* width:100% */
+  }
+  .slideimg{
+    width:100% !important;
+    height:655px;
+    object-fit: cover          ;
+  }
+  .caro-1
+  {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:10rem; 
+    left:-20rem; 
+   
+    
+  }
+  
+  
+  .caro-1>:nth-child(1)
+  {
+    color:rgb(72, 248, 32);
+       text-shadow: -8px 3px 7px black;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .caro-1>:nth-child(2)
+  {
+    color:white;
+    font-weight: bold;
+    font-size: 4rem;
+    text-shadow: -8px 3px 7px black;
+  }
+  .caro-1>:nth-child(3)
+  {
+    color:white;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .button-home
+  {
+    background-color:rgb(177, 250, 177);
+    /* width:150px; */
+    height: 50px;
+    width: 150px;
+    margin-left: 44rem;
+    color:black;
+    border: none;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .caro-2
+  {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:10rem; 
+    left:-20rem; 
+   
+    
+  }
+  .caro-2>:nth-child(1)
+  {
+    color:rgb(72, 248, 32);
+       text-shadow: -8px 3px 7px black;
+    font-weight: bold;
+    font-size: 5rem;
+  }
+  
+ 
+  .caro-2>:nth-child(2)
+  {
+    color:white;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+
+
+
+  .caro-3
+  {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:10rem; 
+    left:-20rem; 
+   
+    
+  }
+  
+  
+  .caro-3>:nth-child(1)
+  {
+    color:rgb(72, 248, 32);
+       text-shadow: -8px 3px 7px black;
+    font-weight: bold;
+    font-size: 5rem;
+  }
+  
+ 
+  .caro-3>:nth-child(2)
+  {
+    color:white;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  @media screen and (max-width:480px) {
+    .caro-2>:nth-child(1)
+    {
+      font-size: 2rem;
+      margin-left: 24rem;
+      margin-top: -3rem;
+    }
+    .caro-2>:nth-child(2)
+    {
+      font-size:25px;
+      margin-left: 25rem;
+    }
+    .caro-3>:nth-child(1)
+    {
+      font-size: 2rem;
+      margin-left: 24rem;
+      margin-top: -3rem;
+    }
+    .caro-3>:nth-child(2)
+    {
+      font-size:25px;
+      margin-left: 25rem;
+    }
+    .caro-1>:nth-child(1)
+    {
+      font-size: 2rem;
+      margin-left: 26rem;
+      margin-top: -8rem;
+    }
+    .caro-1>:nth-child(2)
+    {
+      font-size:1rem;
+      margin-left: 24rem;
+    }
+    .caro-1>:nth-child(3)
+    {
+      font-size:30px;
+      margin-left: 25rem;
+    }
+    .button-home
+    {
+      margin-left:28rem;
+    }
+    
+
+    
+  }
+  @media screen and (max-width:1026px)
+  {
+    .caro-2>:nth-child(1)
+    {
+      /* font-size: 2rem; */
+      margin-left: 24rem;
+      /* margin-top: -3rem; */
+    }
+    .caro-2>:nth-child(2)
+    {
+      /* font-size:25px; */
+      margin-left: 25rem;
+    }
+    .caro-3>:nth-child(1)
+    {
+      /* font-size: 2rem; */
+      margin-left: 24rem;
+      /* margin-top: -3rem; */
+    }
+    .caro-3>:nth-child(2)
+    {
+      /* font-size:25px; */
+      margin-left: 25rem;
+    }
+    .caro-1>:nth-child(1)
+    {
+      
+      margin-left: 26rem;
+      /* margin-top: -8rem; */
+    }
+    .caro-1>:nth-child(2)
+    {
+      
+      margin-left: 24rem;
+    }
+    .caro-1>:nth-child(3)
+    {
+     
+      margin-left: 25rem;
+    }
+  }
+  @media screen and (max-width:340px) {
+    .caro-2>:nth-child(1)
+    {
+      font-size: 1rem;
+      margin-left: 22rem;
+      margin-top: -5rem;
+    }
+    .caro-2>:nth-child(2)
+    {
+      font-size:18px;
+      margin-left: 24rem;
+    }
+    .caro-3>:nth-child(1)
+    {
+      font-size: 1rem;
+      margin-left: 24rem;
+      margin-top: -5rem;
+    }
+    .caro-3>:nth-child(2)
+    {
+      font-size:18px;
+      margin-left: 24rem;
+    }
+    .caro-1>:nth-child(1)
+    {
+      font-size: 15px !important;
+      margin-left: 23rem;
+      margin-top: -8rem;
+    }
+    .caro-1>:nth-child(2)
+    {
+      font-size:1rem;
+      margin-left: 23rem;
+    }
+    .caro-1>:nth-child(3)
+    {
+      font-size:25px;
+      margin-left: 23rem;
+    }
+    .button-home
+    {
+      margin-left:25rem;
+    }
+    
+
+    
+  }
+  @media screen and (min-width:700px) {
+    .button-home
+    {
+      margin-left:38rem;
+    
+  }
+}
