@@ -2,7 +2,7 @@ import React from 'react'
 import "./Legaltranslation.css";
 import { Row, Col, Container } from 'react-bootstrap';
 import legal from "../images/legal.jpg";
-import { styled } from '@mui/material/styles';
+// import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import { Data } from './data';

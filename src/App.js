@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Navsection from './Components/Navsection/Navsection';
+// import Navsection from './Components/Navsection/Navsection';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home/Home';
 import { BrowserRouter as Router,Route,Routes} from "react-router-dom"

@@ -12,22 +12,22 @@ function Footer() {
         
 
         <div>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.facebook.com/login/' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='facebook-f' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://twitter.com/i/flow/login' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='twitter' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.google.com/' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='google' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.instagram.com/' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='instagram' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.linkedin.com/feed/' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='linkedin' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://github.com/' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='github' />
           </a>
         </div>

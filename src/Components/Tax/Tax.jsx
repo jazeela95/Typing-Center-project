@@ -2,9 +2,9 @@ import React from 'react'
 import "./Tax.css"
 import { Row, Col, Container } from 'react-bootstrap';
 import tax from "../images/aboutback2.jpg";
-import { styled } from '@mui/material/styles';
+// import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
+import Tooltip from '@mui/material/Tooltip';
 import {Data} from "../Legal translation/data";
 import { BiChevronRightCircle } from "react-icons/bi";
 

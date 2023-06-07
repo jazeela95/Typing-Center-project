@@ -6,6 +6,9 @@
 {
     background-color: rgb(177, 250, 177) !important;
 }
+img{
+    height: 50px;
+}
 .css-1q39md6-MuiButtonBase-root-MuiButton-root
 {
     font-weight: bold !important;

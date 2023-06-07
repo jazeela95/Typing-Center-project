@@ -6,46 +6,46 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
+// import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
+// import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Android';
+// import AdbIcon from '@mui/icons-material/Android';
 import MenuIcon from '@mui/icons-material/Menu';
 import "./Navbar.css"
 import Logo from "../images/logo.gif";
-import { Link } from 'react-router-dom';
-import { Dropdown } from 'react-bootstrap';
-import InputLabel from '@mui/material/InputLabel';
+// import { Link } from 'react-router-dom';
+// import { Dropdown } from 'react-bootstrap';
+// import InputLabel from '@mui/material/InputLabel';
 
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+// import FormControl from '@mui/material/FormControl';
+// import Select from '@mui/material/Select';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import zIndex from '@mui/material/styles/zIndex';
+// import zIndex from '@mui/material/styles/zIndex';
 
 
-const pages = ['Home', 'About', 'Contact'];
-const settings = ['Legal Translation', 'Tax Consulting', 'All typing Works'];
+// const pages = ['Home', 'About', 'Contact'];
+// const settings = ['Legal Translation', 'Tax Consulting', 'All typing Works'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) =>  {
     console.log(event.currentTarget);
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget);
+  // // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null);
+  // };
 
 
   return (
