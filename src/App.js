@@ -17,21 +17,20 @@ function App() {
     <div className="App">
      <Navbar/>
       
-      <Router>
+      {/* <Router> */}
         <Routes>
         
           <Route path="/" element={<Home/>}></Route>
           <Route path="/about" element={<About/>}></Route>
-          <Route path="/Legaltranslation" element={<Legaltranslation/>}></Route>
+          <Route path="/Legaltranslation" element={<Legaltranslation/>}/>
           <Route path="/Tax" element={<Tax/>}></Route>
           <Route path="/Typing" element={<Typing/>}></Route>
-          
           <Route path="/Contact" element={<Contact/>}></Route>
           
           
 
         </Routes>
-      </Router>
+      {/* </Router> */}
       <Footer/>
       
     

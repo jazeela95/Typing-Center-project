@@ -4,6 +4,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 
 import { BsFacebook,BsWhatsapp,BsInstagram} from "react-icons/bs";
 import { Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div className='footer1'>
@@ -50,48 +51,48 @@ function Footer() {
             <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4' style={{fontSize:"20px",textDecoration:"underline"}}>Our Services</h6>
               <p>
-                <a href='/Legaltranslation' className='text-reset'>
+                <Link to={"/Legaltranslation"}>
                     Legal Translation
-                </a>
+                </Link>
               </p>
               <p>
-                <a href='/Tax' className='text-reset'>
+                <Link to={'/Tax'} className='text-reset'>
                   Tax consulting
-                </a>
+                </Link>
               </p>
               <p>
-                <a href='/Typing' className='text-reset'>
+                <Link to='/Typing' className='text-reset'>
                     All Typing
-                </a>
+                </Link>
               </p>
               <p>
-                <a href='/About' className='text-reset'>
+                <Link to='/About' className='text-reset'>
                   pakistani Passpor
-                </a>
+                </Link>
               </p>
             </MDBCol>
 
             <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4' style={{fontSize:"20px",textDecoration:"underline"}}>More Services</h6>
               <p>
-                <a href='/Typing' className='text-reset'>
+                <Link to='/Typing' className='text-reset'>
                   Immigration services
-                </a>
+                </Link>
               </p>
               <p>
-                <a href='/Typing' className='text-reset'>
+                <Link to='/Typing' className='text-reset'>
                   Certificate Attestation
-                </a>
+                </Link>
               </p>
               <p>
-                <a href='/Typing' className='text-reset'>
+                <Link to='/Typing' className='text-reset'>
                   Medical Services
-                </a>
+                </Link>
               </p>
               <p>
-                <a href='/Typing' className='text-reset'>
+                <Link to='/Typing' className='text-reset'>
                   Family Visa
-                </a>
+                </Link>
               </p>
             </MDBCol>
 
