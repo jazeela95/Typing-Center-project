@@ -6,55 +6,35 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
-// import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-// import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-// import AdbIcon from '@mui/icons-material/Android';
 import MenuIcon from '@mui/icons-material/Menu';
-import "./Navbar.css"
+import "./Navbar.css";
 import Logo from "../images/logo.gif";
-// import { Link } from 'react-router-dom';
-// import { Dropdown } from 'react-bootstrap';
-// import InputLabel from '@mui/material/InputLabel';
-
-// import FormControl from '@mui/material/FormControl';
-// import Select from '@mui/material/Select';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-// import zIndex from '@mui/material/styles/zIndex';
-
-
-// const pages = ['Home', 'About', 'Contact'];
-// const settings = ['Legal Translation', 'Tax Consulting', 'All typing Works'];
+import { Link } from 'react-router-dom';
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) =>  {
-    console.log(event.currentTarget);
     setAnchorElNav(event.currentTarget);
   };
-  // // const handleOpenUserMenu = (event) => {
-  //   setAnchorElUser(event.currentTarget);
-  // // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  // const handleCloseUserMenu = () => {
-  //   setAnchorElUser(null);
-  // };
-
+  const handleMenuItemClick = () => {
+    setAnchorElNav(null); // Close the mobile menu when a menu item is clicked
+  };
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" className='hh'>
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
-          className='imgheader'
+            className='imgheader'
             variant="h6"
             noWrap
             component="a"
@@ -71,11 +51,11 @@ function ResponsiveAppBar() {
               zIndex:100
             }}
           >
-             <a href="/" className="navbar-brand">
-      <img src={Logo} alt="" className='logoimage' />
-    </a>
+            <Link to="/" className="navbar-brand">
+              <img src={Logo} alt="" className='logoimage' />
+            </Link>
           </Typography>
-{/* mobile view 3line */}
+
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -94,41 +74,31 @@ function ResponsiveAppBar() {
                 vertical: 'top',
                 horizontal: 'left',
               }}
-              // keepMounted
-              // transformOrigin={{
-              //   vertical: 'top',
-              //   horizontal: 'left',
-              // }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {/* {pages.map((page) => ( */}
-                <MenuItem style={{width:180}}>
-                  <Typography >    
-                  <ul className='navmobileview' style={{display:'flex',gap:'2rem',listStyleType:"none"}}>
-                  <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li >
-            <NavDropdown title="Services" id="basic-nav-dropdown" style={{cursor:'pointer'}} >
-          <NavDropdown.Item href="/Legaltranslation">Legal Translation</NavDropdown.Item>
-          <NavDropdown.Item href="/Tax">Tax consulting</NavDropdown.Item>
-          <NavDropdown.Item href="/Typing">All Typing works</NavDropdown.Item>  
-        </NavDropdown>
-              
-              
-              
-            </li>
-            <li><a href="/Contact">Contact</a></li>
+              <MenuItem style={{ width: 180 }} onClick={handleMenuItemClick}>
+                <Typography>
+                  <ul className='navmobileview' style={{ display: 'flex', gap: '2rem', listStyleType: "none" }}>
+                    <li><Link to="/" onClick={handleMenuItemClick}>Home</Link></li>
+                    <li><Link to="/about" onClick={handleMenuItemClick}>About</Link></li>
+                    <li>
+                      <NavDropdown title="Services" id="basic-nav-dropdown" style={{ cursor: 'pointer' }}>
+                        <NavDropdown.Item><Link to="/Legaltranslation" onClick={handleMenuItemClick}>Legal Translation</Link></NavDropdown.Item>
+                        <NavDropdown.Item><Link to="/Tax" onClick={handleMenuItemClick}>Tax consulting</Link></NavDropdown.Item>
+                        <NavDropdown.Item><Link to="/Typing" onClick={handleMenuItemClick}>All Typing works</Link></NavDropdown.Item>
+                      </NavDropdown>
+                    </li>
+                    <li><Link to="/Contact" onClick={handleMenuItemClick}>Contact</Link></li>
                   </ul>
-                  </Typography>
-                </MenuItem>
-              {/* ))} */}
+                </Typography>
+              </MenuItem>
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
+
           <Typography
             variant="h5"
             noWrap
@@ -146,39 +116,25 @@ function ResponsiveAppBar() {
               marginLeft:"160px"
             }}
           >
-             <a href="/" className="navbar-brand">
-      <img src={Logo} alt="" className='logoimage' />
-    </a>
+            <Link to="/" className="navbar-brand">
+              <img src={Logo} alt="" className='logoimage' />
+            </Link>
           </Typography>
-          {/* //web */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-           <ul  className='webviewnav' style={{listStyleType:"none",}}>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li>
-            <NavDropdown title="Services" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/Legaltranslation">Legal Translation</NavDropdown.Item>
-          <NavDropdown.Item href="/Tax">Tax consulting</NavDropdown.Item>
-          <NavDropdown.Item href="/Typing">All Typing works</NavDropdown.Item>
-        </NavDropdown>
-              
-              
-              
-            </li>
-            <li><a href="/Contact">Contact</a></li>
-            
-           </ul>
-              <Button
-                // key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {/* {page} */}
-              </Button>
-           
-          </Box>
 
-          
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <ul className='webviewnav' style={{ listStyleType: "none" }}>
+              <li><Link to="/" onClick={handleMenuItemClick}>Home</Link></li>
+              <li><Link to="/about" onClick={handleMenuItemClick}>About</Link></li>
+              <li>
+                <NavDropdown title="Services" id="basic-nav-dropdown">
+                  <NavDropdown.Item><Link to="/Legaltranslation" onClick={handleMenuItemClick}>Legal Translation</Link></NavDropdown.Item>
+                  <NavDropdown.Item><Link to="/Tax" onClick={handleMenuItemClick}>Tax consulting</Link></NavDropdown.Item>
+                  <NavDropdown.Item><Link to="/Typing" onClick={handleMenuItemClick}>All Typing works</Link></NavDropdown.Item>
+                </NavDropdown>
+              </li>
+              <li><Link to="/Contact" onClick={handleMenuItemClick}>Contact</Link></li>
+            </ul>
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>

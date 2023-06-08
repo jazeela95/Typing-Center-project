@@ -2,8 +2,11 @@
     
     margin-right: 700px !important;
 }
-.css-hip9hq-MuiPaper-root-MuiAppBar-root
+/* .css-hip9hq-MuiPaper-root-MuiAppBar-root
 {
+    background-color: rgb(177, 250, 177) !important;
+} */
+.hh{
     background-color: rgb(177, 250, 177) !important;
 }
 img{
@@ -51,6 +54,7 @@ li.active {
 .dropdown-item:hover,
 .dropdown-item.active {
   background-color: rgb(150, 249, 150)!important; /* Background color for the active/hovered dropdown item */
+  cursor: pointer;
 }
 @media screen and (max-width:1026px) 
 {

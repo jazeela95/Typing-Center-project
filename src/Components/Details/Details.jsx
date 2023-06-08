@@ -5,6 +5,7 @@ import tax from "../images/bg2.jpg";
 import typing from "../images/aboutback2.jpg"
 import { BiChevronRightCircle } from "react-icons/bi";
 import "./Details.css"
+import { Link } from 'react-router-dom';
 
 function Details() {
   return (
@@ -16,30 +17,30 @@ function Details() {
                 <h4 style={{paddingTop:"15px"}}>Legal Translation</h4>
                 <p  className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias enim maiores corporis qui, hic impedit repellendus tempora porro consectetur
                     doloribus adipisci fugiat libero quaerat ad? Rerum soluta dolores perspiciatis.</p>
-                <a href="/Legaltranslation"><button className='detai-button'>Read more
+                <Link to="/Legaltranslation"><button className='detai-button'>Read more
                 <BiChevronRightCircle style={{paddingLeft:"5px",height:"25px",width:"25px"}}/>
                 </button>
-                </a>
+                </Link>
             </Col>
             <Col>
             <img className='imagedetail' src={tax} alt="" ></img>
                 <h4 style={{paddingTop:"15px"}}>Tax Consultancy</h4>
                 <p className='para'  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias enim maiores corporis qui, hic impedit repellendus tempora porro consectetur
                     doloribus adipisci fugiat libero quaerat ad? Rerum soluta dolores perspiciatis.</p>
-                <a href="/Tax"><button className='detai-button'>Read more
+                <Link to="/Tax"><button className='detai-button'>Read more
                 <BiChevronRightCircle style={{paddingLeft:"5px",height:"25px",width:"25px"}}/>
                 </button>
-                </a>
+                </Link>
             </Col>
             <Col className='detaillastcol'>
             <img className='imagedetail imglast' src={typing} alt="" ></img>
                 <h4 style={{paddingTop:"15px"}}>Typing Services</h4>
                 <p className='para lastpara'  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias enim maiores corporis qui, hic impedit repellendus tempora porro consectetur
                     doloribus adipisci fugiat libero quaerat ad? Rerum soluta dolores perspiciatis.</p>
-                <a href="/Typing"><button className='detai-button'>Read more
+                <Link to="/Typing"><button className='detai-button'>Read more
                 <BiChevronRightCircle style={{paddingLeft:"5px",height:"25px",width:"25px"}}/>
                 </button>
-                </a>
+                </Link>
             </Col>
         </Row>
 </Container>
