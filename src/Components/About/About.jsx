@@ -1,7 +1,7 @@
 import React from 'react'
 import "./About.css";
 // import cardimg1 from "../images/aboutback2.jpg"
-import temp from "../images/pexels-lil-artsy-3278757.jpg"
+import temp from "../images/ab1.jpg"
 
 import { Row, Col } from 'react-bootstrap';
 

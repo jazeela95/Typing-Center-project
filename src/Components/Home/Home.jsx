@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Home.css";
-import back from "../images/bg2.jpg";
+import back from "../images/bg22.jpg";
 import pexel1 from "../images/pexels1.jpg";
 import pexel2 from "../images/pexels2.jpg";
 import Carousel from 'react-bootstrap/Carousel';
