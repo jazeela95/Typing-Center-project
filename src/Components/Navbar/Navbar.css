@@ -81,7 +81,7 @@ li.active {
     }
     .webviewnav
 {
-   padding-left: 390px;
+   /* padding-left: 390px; */
 }
 }
 @media screen and (min-width:700px) 
