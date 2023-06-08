@@ -3,7 +3,7 @@ import './App.css';
 // import Navsection from './Components/Navsection/Navsection';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home/Home';
-import { BrowserRouter as Router,Route,Routes} from "react-router-dom"
+import { BrowserRouter as Router,Route} from "react-router-dom"
 import About from './Components/About/About';
 import Legaltranslation from './Components/Legal translation/Legaltranslation';
 import Tax from './Components/Tax/Tax';
@@ -18,18 +18,14 @@ function App() {
      <Navbar/>
       
       {/* <Router> */}
-        <Routes>
-        
+        <Router>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/about" element={<About/>}></Route>
           <Route path="/Legaltranslation" element={<Legaltranslation/>}/>
           <Route path="/Tax" element={<Tax/>}></Route>
           <Route path="/Typing" element={<Typing/>}></Route>
           <Route path="/Contact" element={<Contact/>}></Route>
-          
-          
-
-        </Routes>
+        </Router>
       {/* </Router> */}
       <Footer/>
       

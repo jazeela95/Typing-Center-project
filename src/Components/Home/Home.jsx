@@ -7,7 +7,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { BiChevronRightCircle } from "react-icons/bi";
 // import Button from 'react-bootstrap/Button';
 import Details from '../Details/Details';
-
+import {Link } from "react-router-dom"
 
 import Icon from '../Icons/Icon';
 import { motion } from "framer-motion";
@@ -43,14 +43,14 @@ function Home() {
                   transition={{ duration: 3 ,delay:"0.2"}}
               >All License related services can be<br></br> available from our centre now
               </motion.span>
-              <motion.a 
+              <Link 
               initial={{ x: "-40rem" }}
               animate={{ x: 0 }}
               transition={{ duration: 3 ,delay:"0.1"}}
-              href="/About" className="btn btn-success button-home" style={{ paddingTop: "13px" }}>
+              to="/About" className="btn btn-success button-home" style={{ paddingTop: "13px" }}>
                 Read More
                 <BiChevronRightCircle style={{ paddingLeft: "5px", height: "20px", width: "20px" }} />
-              </motion.a>
+              </Link>
             </Carousel.Caption>
           </div>
         </Carousel.Item>
