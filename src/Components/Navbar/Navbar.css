@@ -13,6 +13,10 @@
 .hh{
     background-color: rgb(177, 250, 177) !important;
 }
+.navmobileview
+{
+    width:165px !important;
+}
 img{
     height: 50px;
 }

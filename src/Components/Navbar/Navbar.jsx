@@ -6,7 +6,6 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
-// import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import "./Navbar.css";
@@ -17,7 +16,7 @@ import { Link } from 'react-router-dom';
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-  const handleOpenNavMenu = (event) =>  {
+  const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
 
@@ -25,8 +24,15 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
-  const handleMenuItemClick = () => {
-    setAnchorElNav(null); // Close the mobile menu when a menu item is clicked
+  const handleMenuItemClick = (event,type) => {
+    if(type === "child"){
+      event.stopPropagation(); // Prevent event propagation
+      // setAnchorElNav(null);
+    }else{
+      console.log(event);
+      event.stopPropagation(); // Prevent event propagation
+      setAnchorElNav(null); // Close the mobile menu when a menu item is clicked
+    }
   };
 
   return (
@@ -47,8 +53,8 @@ function ResponsiveAppBar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
-              marginLeft:"200px",
-              zIndex:100
+              marginLeft: "200px",
+              zIndex: 100
             }}
           >
             <Link to="/" className="navbar-brand">
@@ -74,19 +80,24 @@ function ResponsiveAppBar() {
                 vertical: 'top',
                 horizontal: 'left',
               }}
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              <MenuItem style={{ width: 180 }} onClick={handleMenuItemClick}>
+              <MenuItem onClick={handleMenuItemClick}>
                 <Typography>
-                  <ul className='navmobileview' style={{ display: 'flex', gap: '2rem', listStyleType: "none" }}>
+                  <ul className='navmobileview' style={{ display: 'flex', flexDirection: 'column', gap: '2rem', listStyleType: "none" }}>
                     <li><Link to="/" onClick={handleMenuItemClick}>Home</Link></li>
                     <li><Link to="/about" onClick={handleMenuItemClick}>About</Link></li>
                     <li>
-                      <NavDropdown title="Services" id="basic-nav-dropdown" style={{ cursor: 'pointer' }}>
+                      <NavDropdown title="Services" id="basic-nav-dropdown"
+                      onClick={(e)=>handleMenuItemClick(e,'child')}  style={{ cursor: 'pointer' }}>
                         <NavDropdown.Item><Link to="/Legaltranslation" onClick={handleMenuItemClick}>Legal Translation</Link></NavDropdown.Item>
                         <NavDropdown.Item><Link to="/Tax" onClick={handleMenuItemClick}>Tax consulting</Link></NavDropdown.Item>
                         <NavDropdown.Item><Link to="/Typing" onClick={handleMenuItemClick}>All Typing works</Link></NavDropdown.Item>
@@ -113,7 +124,7 @@ function ResponsiveAppBar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
-              marginLeft:"160px"
+              marginLeft: "160px"
             }}
           >
             <Link to="/" className="navbar-brand">
