@@ -3,7 +3,6 @@ import "./App.css";
 // import Navsection from './Components/Navsection/Navsection';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Components/Home/Home";
-import { Routes, Route } from "react-router-dom";
 import About from "./Components/About/About";
 import Legaltranslation from "./Components/Legal translation/Legaltranslation";
 import Tax from "./Components/Tax/Tax";
@@ -11,6 +10,7 @@ import Typing from "./Components/Typing/Typing";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Contact/Contact";
 import Navbar from "./Components/Navbar/Navbar";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
