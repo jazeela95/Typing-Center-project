@@ -6,6 +6,10 @@
 {
     background-color: rgb(177, 250, 177) !important;
 } */
+.navbar-brand
+{
+    margin-left: 30px;
+}
 .hh{
     background-color: rgb(177, 250, 177) !important;
 }

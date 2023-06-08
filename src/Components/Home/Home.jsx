@@ -35,13 +35,13 @@ function Home() {
                initial={{ y: "30rem" }}
                animate={{ y: 0 }}
                transition={{ duration: 3 ,delay:"0.1"}}
-              >DEP APPLICATIONS</motion.span>
+              >DEEP APPLICATIONS</motion.span>
 
               <motion.span
                   initial={{ y: "30rem" }}
                   animate={{ y: 0 }}
                   transition={{ duration: 3 ,delay:"0.2"}}
-              >All License related services can be<br></br> available from our centre now
+              >All Licence related services can be<br></br> available from our centre now
               </motion.span>
               <Link 
               initial={{ x: "-40rem" }}
